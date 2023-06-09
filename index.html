@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayush Singh - Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/af07371b52.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init("FyU9gi6q4qVww6aJ3");
+    })();
+</script>
+  </head>
+  <body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+      <nav>
+        <figure>
+          <img
+            src="./assets/SWE__LOGO.svg"
+            alt="Ayush's Logo"
+            class="personal-logo"
+          />
+        </figure>
+        <ul class="nav__link--lists">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href=""
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fas fa-adjust"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="row">
+          <div class="header__content">
+            <h1 class="title"
+              data-aos="fade-up"             
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              Hello, <br /><span class="brand__color">I'm Ayush Singh !</span>
+            </h1>
+            <p class="header__para"
+              data-aos="fade-up"             
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              I'm a <b class="brand__color">Full Stack Web Developer</b> who
+              is enthusiastic about creating useful digital products using
+              cutting-edge technologies to benefit both the world and its
+              consumers. Here's a little more
+              <b class="brand__color click"><a onclick="toggleModal()">about me</a></b>
+            </p>
+            <div class="social__list">
+              <a
+                href="https://www.linkedin.com/in/ayushharendrasingh"
+                target="_blank"
+                class="social__link click"
+                data-aos="fade-up"  
+                data-aos-offset="50"           
+                data-aos-delay="300"
+                data-aos-duration="1000"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com/xtremeandroid"                
+                target="_blank"
+                class="social__link click"
+                data-aos="fade-up"   
+                data-aos-offset="50"           
+                data-aos-delay="400"
+                data-aos-duration="1000"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="./assets/ayushSinghResume.pdf"
+                target="_blank"
+                class="social__link click"
+                data-aos="fade-up"  
+                data-aos-offset="50"            
+                data-aos-delay="500"
+                data-aos-duration="1000"
+              ><i class="fas fa-file"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-paper-plane dark"></i>
+        </button>
+      </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">More about me.</h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Full Stack Web Developer
+          </h4>
+          <p class="modal__para">
+            I'm a <b class="brand__color">Full Stack Web Developer</b> that
+            is highly <b class="brand__color">self-motivated</b> and
+            <b class="brand__color">passionate</b> about developing and
+            learning <b class="brand__color">emerging technologies</b> to add value to the world through the
+            digital space.
+          </p>
+          <p class="modal__para">
+            On a daily basis, as a dedicated student, I diligently undertake a wide array of projects, aiming to continually advance my
+             <b class="brand__color">engineering skills</b> thus endeavoring to construct remarkable solutions that contribute meaningfully to our
+            <b class="brand__color">world.</b>
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/html.svg" alt="HTML logo"/>
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/css3.svg" alt="CSS logo"/>
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/javascript.svg" alt="JavaScript logo"/>
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/react.svg" alt="React logo"/>
+              <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/mongodb.svg" alt="MongoDb logo"/>
+              <span class="language__name">MongoDb</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/expressjs-icon.svg" alt="Express logo"/>
+              <span class="language__name">ExpressJS</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/nodejs-icon.svg" alt="NodeJS logo"/>
+              <span class="language__name">NodeJS</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/git-scm-icon.svg" alt="git logo"/>
+              <span class="language__name">Version Control</span>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+            <h3 class="modal__title modal__title--contact">I'd love to hear from you!</h3>
+            <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open for new opportunites.</h4>
+            <form id="contact__form" onsubmit="contact(event)">
+                <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                    <input type="text" class="input" name="user_name" ></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Email</label>
+                    <input type="email" class="input" name="user_email" ></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label" >Message</label>
+                    <textarea type="text" class="input" name="message" ></textarea>
+                </div>
+                <button id="contact__submit" class="form__submit">
+                    Submit
+                </button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+                <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+                Thank you for reaching out! Looking forward to speaking to you soon.
+            </div>
+        </div>
+      </div>
+    <img src="./assets/swirl.svg" class="shape shape--0">
+    <img src="./assets/swirl 1.svg" class="shape shape--1">
+    <img src="./assets/swirl 2.svg" class="shape shape--2">
+    <img src="./assets/swirl 3.svg" class="shape shape--3">
+    <img src="./assets/swirl.svg" class="shape shape--4">
+    <img src="./assets/swirl 3.svg" class="shape shape--5">
+    <img src="./assets/swirl 2.svg" class="shape shape--6">
+    <img src="./assets/swirl 1.svg" class="shape shape--7">
+    <img src="./assets/swirl.svg" class="shape shape--8">
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h2 
+            class="section__title"
+            data-aos="fade-up"             
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            Here are some of my <span class="brand__color">projects.</span>
+          </h2>
+          <ul class="project__list">
+            <li 
+             class="project"
+             data-aos="fade-up"             
+             data-aos-delay="300"
+             data-aos-duration="1000"
+            >
+              <div class="project__wrapper mobile__project__wrapper">
+                <img
+                  src="./assets/hw.jpg"
+                  class="project__img"
+                  alt="nftmarketplace__mockup"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                  <span class="brand__color">HeavenWalls</span> 
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    ReactJS, Axios, ChakraUI
+                  </h4>
+                  <p class="project__description--para">
+                    A React wallpaper app that uses the Wallhaven API is a web-based application that allows users to search, browse, and download high-quality wallpapers for their desktops, mobile devices, or any other device.
+                    Check out the project or Git Repository through the links below.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/xtremeandroid/HeavenWalls-WallPaperApp"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github click"></i>
+                    </a>
+                    <a
+                      href="https://heavenwalls.netlify.app/"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link click"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li 
+             class="project"
+             data-aos="fade-up"             
+             data-aos-delay="300"
+             data-aos-duration="1000"
+            >
+              <div class="project__wrapper">
+                <img
+                  src="./assets/cm.jpg"
+                  class="project__img"
+                  alt="moviefavs_mockup"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    <span class="brand__color">CryptoMarketCap</span> 
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    ReactJS, ChakraUI, Axios
+                  </h4>
+                  <p class="project__description--para">
+                    CryptoMarketCap is a React web application that displays the current cryptocurrency prices of the top 100 cryptocurrencies. The application uses the CoinGecko API to retrieve the price data and displays it in a table format.
+                    Check out the project or Github Repository through the links below.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/xtremeandroid/CryptoMarketCap"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github click"></i>
+                    </a>
+                    <a
+                      href="https://cryptomarketcapreact.netlify.app/"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link click"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li 
+             class="project"
+             data-aos="fade-up"             
+             data-aos-delay="300"
+             data-aos-duration="1000"
+            >
+              <div class="project__wrapper">
+                <img
+                  src="./assets/youtubeclone_mockup.png"
+                  class="project__img"
+                  alt="youtube_clone_mockup"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    <span class="brand__color">Youtube Clone</span> 
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    ReactJS, MaterialUI, Rapid API
+                  </h4>
+                  <p class="project__description--para">
+                    A fully functional and responsive Youtube clone with playable videos. Application consists of stunning video sections, custom categories, 
+                    channel pagesUtilized RapidAPI to make request to Youtube V3 API. Created application with components from MaterialUI.
+                    Check out the project or Github Repository through the links below.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/mccantsquincy/Youtube-clone"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github click"></i>
+                    </a>
+                    <a
+                      href="https://youtube-clone-qm.vercel.app/"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link click"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li 
+             class="project"
+             data-aos="fade-up"             
+             data-aos-delay="300"
+             data-aos-duration="1000"
+            >
+              <div class="project__wrapper">
+                <img
+                  src="./assets/netflixclone_mockup.png"
+                  class="project__img"
+                  alt="netflixclone__mockup"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    <span class="brand__color">Netflix Clone</span> 
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    ReactJS
+                  </h4>
+                  <p class="project__description--para">
+                    A simple functioning Netflix clone built with ReactJS. Utilizes axios for API requests to TMDB API. Deployed using Firebase.
+                    Check out the project or Github Repository through the links below.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/mccantsquincy/Netflix-clone"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github click"></i>
+                    </a>
+                    <a
+                      href="https://netflix-clone-93bdf.web.app/"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link click"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li 
+             class="project"
+             data-aos="fade-up"             
+             data-aos-delay="300"
+             data-aos-duration="1000"
+            >
+              <div class="project__wrapper">
+                <img
+                  src="./assets/library_mockup.png"
+                  class="project__img"
+                  alt="library__mockup"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    <span class="brand__color">Book Store (E-commerce)</span> 
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    ReactJS
+                  </h4>
+                  <p class="project__description--para">
+                    Fully responsive ReactJS E-commerce application with the best Business and Self Improvement books. Application 
+                    consists dynamic routing, skeleton loading states, a full functioning add to cart and more. 
+                    Check out the project or Github Repository through the links below.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/mccantsquincy/React-app---Library-"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github click"></i>
+                    </a>
+                    <a
+                      href="https://react-app-library.vercel.app/"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link click"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li 
+             class="project"
+             data-aos="fade-up"             
+             data-aos-delay="300"
+             data-aos-duration="1000"
+            >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div 
+         class="row footer__row"
+         data-aos="fade-up"             
+         data-aos-delay="200"
+         data-aos-duration="1000"
+        >
+          <figure>
+            <img
+              src="./assets/SWE__LOGO.svg"
+              class="invert-logo"
+              alt="Quincy's logo"
+            />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/xtremeandroid"                
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Github
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ayushharendrasingh"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Linkedin
+            </a>
+            <a
+              href = "mailto: snapit4ayush@gmail.com"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              onclick="toggleModal()"
+            >
+              Contact
+            </a>
+            <a
+              href="./assets/ayushSinghResume.pdf"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">Copyright Ⓒ 2023 Ayush Singh</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>
