@@ -44,3 +44,9 @@ Feel free to customize the portfolio website to suit your own needs. Here are a 
 - Modify the skills section to reflect your own skills and expertise.
 - Customize the about me section with your personal background, education, and experience.
 - Update the contact information with your own details to ensure visitors can reach out to you easily.
+
+## Screenshots
+![brave_BjYmlqRQcS](https://github.com/xtremeandroid/Portfolio/assets/62198074/2e1c9607-9e7e-4cde-b209-9e29b3f4e2e5)
+![brave_BNjlO6unBX](https://github.com/xtremeandroid/Portfolio/assets/62198074/5e3feb47-0689-4c04-92f4-0ce81972f174)
+![brave_n1RHSwlxWi](https://github.com/xtremeandroid/Portfolio/assets/62198074/6e9c3545-c923-416d-ad47-47d8743c50b5)
+
