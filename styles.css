@@ -209,8 +209,8 @@ nav {
 }
 
 .personal-logo {
-  height: 200px;
-  width: 200px;
+  height: 36px;
+  width: auto;
 }
 
 .nav__link--lists {
@@ -598,8 +598,8 @@ footer {
 
 .invert-logo {
   filter: invert(1);
-  height: 200px;
-  width: 200px;
+  height: 36px;
+  width: auto;
 }
 
 .footer__social--list {
@@ -608,6 +608,7 @@ footer {
   width: 100%;
   max-width: 500px;
   margin: 20px 0;
+  padding-top: 20px;
 }
 
 .footer__social--link {
