@@ -1,8 +1,5 @@
-// template_lhascog
-// service_jc5eyoy
-// FyU9gi6q4qVww6aJ3
 let isModalOpen = false;
-let contrastToggle = true;
+let contrastToggle = false;
 const scaleFactor = 1 / 20;
 
 function moveBackground(event) {
