@@ -1,4 +1,4 @@
-let isModalOpen = true;
+let isModalOpen = false;
 let contrastToggle = true;
 const scaleFactor = 1 / 20;
 
